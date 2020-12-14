@@ -24,6 +24,8 @@ SC_MODULE(CONTROL) {
 
 	SC_CTOR(CONTROL) {
 		SC_METHOD(control);
-		sensitive << reset << instruction;
+		   sensitive 
+	    << reset 
+	    << instruction;
 	}
 };

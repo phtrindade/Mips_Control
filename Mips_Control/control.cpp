@@ -22,9 +22,12 @@ void CONTROL::control()
 	sc_bv<1> 	regwriteF;
 	sc_bv<2> 	aluopF;
 
+
 	rst = reset.read();
+	
 	inst = instruction.read();
 	
+
 	if(rst == 1) {
 		regdstF = 0x0;
 		jumpF = 0x0;

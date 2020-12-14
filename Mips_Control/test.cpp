@@ -19,46 +19,55 @@ void test_control::do_test()
 		print();
 		wait(1);
 
+
 		rst = 0x1;
 		inst = 0x5;
 		print();
 		wait(1);
+
 
 		rst = 0x0;
 		inst = 0x23;
 		print();
 		wait(1);
 
+
 		rst = 0x1;
 		inst = 0x2B;
 		print();
 		wait(1);
+
 
 		rst = 0x1;
 		inst = 0x2;
 		print();
 		wait(1);
 
+
 		rst = 0x0;
 		inst = 0x8a;
 		print();
 		wait(1);
+
 
 		rst = 0x0;
 		inst = 0x2f;
 		print();
 		wait(1);
 
+
 		rst = 0x0;
 		inst = 0xfd;
 		print();
 		wait(1);
+
 
 		rst = 0x0;
 		inst = 0x7;
 		print();
 		wait();
 
+	
 	}
 }
 

@@ -26,10 +26,13 @@ int sc_main(int argc, char* argv[]) {
 	sc_signal  <sc_bv<1> >		alusrcF;
 	sc_signal  <sc_bv<1> >		regwriteF;
 	sc_signal  <sc_bv<2> >		aluopF;
+	
 	CONTROL CONTROL("CONTROL");
+	
 	CONTROL(rst, inst, regdstF, jumpF, branchF, memreadF, memtoregF, memwriteF, alusrcF, regwriteF, aluopF);
 
 	test_control TESTCONTROL("TESTCONTROL");
+	
 	TESTCONTROL(CLK, rst, inst, regdstF, jumpF, branchF, memreadF, memtoregF, memwriteF, alusrcF, regwriteF, aluopF);
 
 	sc_start(500, SC_NS);

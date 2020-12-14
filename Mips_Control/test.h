@@ -27,6 +27,6 @@ SC_MODULE(test_control) {
 	void print();
 
 	SC_CTOR(test_control) {
-		SC_CTHREAD(do_test, clock.pos());
+		    SC_CTHREAD(do_test, clock.pos());
 	}
 };
